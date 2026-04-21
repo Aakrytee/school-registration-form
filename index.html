@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>School registration form</title>
+        <style>
+            *{
+                background-color: #ffffff;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            form{
+            border-radius: 10px;
+                margin: auto;
+            }
+
+            fieldset{
+                margin-bottom: 10px;
+                border-radius: 8px;
+            }
+
+            button{
+                padding: auto;
+            }
+
+            button:hover{
+                curser:pointer;
+                background-color: blue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form>
+        <h1> School registration form.</h1>
+
+        <fieldset>
+            <legend> Personal information</legend>
+
+            <label for="name"> Name</label>
+            <input type="text" name="name" placeholder="Enter your name"><br>
+               
+             <label for="DOB">Date of birth</label>
+            <input type="date" name="DOB" required><br>
+
+             <label for="gender"> Gender</label>
+            <input type="radio" name="gender" value="Male">Male
+             <input type="radio" name="gender" value="Female">female<br>
+
+               
+             <label for="phn">Phone Number</label>
+            <input type="tel" pattern="[o-9]{10}" placeholder="98XXXXXXXX"><br>
+
+              
+             <label for="email">Email</label>
+            <input type="email" name="email"><br>
+
+        </fieldset><br> <br>
+
+
+
+        <fieldset>
+            <legend>Address Details</legend>
+
+            <label for="Address">Address</label>
+            <textarea name="address"></textarea><br>
+
+            
+            <label for="city">City</label>
+            <input type="text"><br>
+             
+            <label > Choose your Country</label>
+            <select name="Country">
+                 <option> --Select--</option>
+                <option> India</option>
+                 <option> Nepal</option>
+                  <option> China</option>
+                   <option> USA</option>
+                    <option> Russia</option>
+                    </select>
+       </fieldset><br> <br>
+
+        <fieldset>
+        
+            <legend> Academic Information</legend>
+
+            <label>Previous school Name:</label>
+            <input for="text"><br>
+
+            <label for="grade">Grade applying for:</label><br>
+              <select id="grade" name="grade" required>
+    <option value="">--Select Grade--</option>
+    <option value="grade1">Grade 1</option>
+    <option value="grade2">Grade 2</option>
+    <option value="grade3">Grade 3</option>
+    <option value="grade4">Grade 4</option>
+    <option value="grade5">Grade 5</option>
+    <option value="grade6">Grade 6</option>
+    <option value="grade7">Grade 7</option>
+    <option value="grade8">Grade 8</option>
+    <option value="grade9">Grade 9</option>
+    <option value="grade10">Grade 10</option>
+</select><br>
+
+             <label> Subject:</label><br>
+             <input type="checkbox" name="subject" value="Science">Science
+             <input type="checkbox" name="subject" value="Maths">Maths
+             <input type="checkbox" name="subject" value="English">English
+             </fieldset><br><br>
+
+             <fieldset>
+                <legend>Account Information</legend>
+                <label for="username">Username:</label>
+                <input type="text" id="username" required><br>
+                 
+                <label for="password">Password:</label>
+                <input type="password" id="password" minlength="6" required><br>
+                    
+                 <label for="password"> Confirm Password:</label>
+                <input type="password"  required><br>
+                
+             </fieldset>
+               
+
+             <label> Photo upload:</label>
+              <input type="file" name="image" accept="image/*" > <br><br>
+
+               <label>Terms and Condition:</label>
+              <input type="checkbox" required>
+              <label> I agree to the terms and conditions.</label><br><br>
+
+
+              <button type="submit" name="submit"> Submit</button>
+              <button type="reset" name="reset">Reset</button><br>
+
+
+           <script>
+            
+           </script>
+        
+        </form>
+    </body>
+</html>
